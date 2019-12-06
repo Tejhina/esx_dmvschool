@@ -118,7 +118,8 @@ function OpenDMVSchoolMenu()
 	if not ownedLicenses['dmv'] then
 		table.insert(elements, {
 			label = (('%s: <span style="color:green;">%s</span>'):format(_U('theory_test'), _U('school_item', ESX.Math.GroupDigits(Config.Prices['dmv'])))),
-			value = 'theory_test'
+			value = 'theory_test',
+			type = 'dmv'
 		})
 	end
 
